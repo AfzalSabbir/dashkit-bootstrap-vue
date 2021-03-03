@@ -51,14 +51,10 @@
                                     </h6>
 
                                     <!-- Heading -->
-                                    <span class="h2 mb-0">
-                      $24,500
-                    </span>
+                                    <span class="h2 mb-0">$24,500</span>
 
                                     <!-- Badge -->
-                                    <span class="badge badge-soft-success mt-n1">
-                      +3.5%
-                    </span>
+                                    <span class="badge badge-soft-success mt-n1">+3.5%</span>
                                 </div>
                                 <div class="col-auto">
 
@@ -85,9 +81,7 @@
                                     </h6>
 
                                     <!-- Heading -->
-                                    <span class="h2 mb-0">
-                      763.5
-                    </span>
+                                    <span class="h2 mb-0">763.5</span>
 
                                 </div>
                                 <div class="col-auto">
@@ -115,9 +109,7 @@
                                     </h6>
 
                                     <!-- Heading -->
-                                    <span class="h2 mb-0">
-                      35.5%
-                    </span>
+                                    <span class="h2 mb-0">35.5%</span>
 
                                 </div>
                                 <div class="col-auto">
@@ -147,9 +139,7 @@
                                     </h6>
 
                                     <!-- Heading -->
-                                    <span class="h2 mb-0">
-                      2:37
-                    </span>
+                                    <span class="h2 mb-0">2:37</span>
 
                                 </div>
                                 <div class="col-auto">
@@ -177,9 +167,7 @@
                             </h4>
 
                             <!-- Caption -->
-                            <span class="text-muted mr-3">
-                  Last year comparision:
-                </span>
+                            <span class="text-muted mr-3">Last year comparision:</span>
 
                             <!-- Switch -->
                             <div class="custom-control custom-switch">
@@ -983,45 +971,33 @@
                                 <div class="custom-control custom-checkbox checklist-control">
                                     <input class="custom-control-input" id="checklistOne" type="checkbox"/>
                                     <label class="custom-control-label" for="checklistOne"></label>
-                                    <span class="custom-control-caption">
-                      Delete the old mess in functions files.
-                    </span>
+                                    <span class="custom-control-caption">Delete the old mess in functions files.</span>
                                 </div>
                                 <div class="custom-control custom-checkbox checklist-control">
                                     <input class="custom-control-input" id="checklistTwo" type="checkbox"/>
                                     <label class="custom-control-label" for="checklistTwo"></label>
-                                    <span class="custom-control-caption">
-                      Refactor the core social sharing modules
-                    </span>
+                                    <span class="custom-control-caption">Refactor the core social sharing modules</span>
                                 </div>
                                 <div class="custom-control custom-checkbox checklist-control">
                                     <input class="custom-control-input" id="checklistThree" type="checkbox"/>
                                     <label class="custom-control-label" for="checklistThree"></label>
-                                    <span class="custom-control-caption">
-                      Create the release notes for the new pages so customers get psyched.
-                    </span>
+                                    <span class="custom-control-caption">Create the release notes for the new pages so customers get psyched.</span>
                                 </div>
                                 <div class="custom-control custom-checkbox checklist-control">
                                     <input class="custom-control-input" id="checklistFour" type="checkbox"/>
                                     <label class="custom-control-label" for="checklistFour"></label>
-                                    <span class="custom-control-caption">
-                      Send Dianna those meeting notes
-                    </span>
+                                    <span class="custom-control-caption">Send Dianna those meeting notes</span>
                                 </div>
                                 <div class="custom-control custom-checkbox checklist-control">
                                     <input class="custom-control-input" id="checklistFive" type="checkbox"/>
                                     <label class="custom-control-label" for="checklistFive"></label>
-                                    <span class="custom-control-caption">
-                      Share the documentation for the new unified API
-                    </span>
+                                    <span
+                                        class="custom-control-caption">Share the documentation for the new unified API</span>
                                 </div>
                                 <div class="custom-control custom-checkbox checklist-control">
                                     <input class="custom-control-input" id="checklistSix" type="checkbox" checked/>
                                     <label class="custom-control-label" for="checklistSix"></label>
-                                    <span class="custom-control-caption">
-                      Clean up the Figma file with all of the avatars, buttons, and other
-                      components.
-                    </span>
+                                    <span class="custom-control-caption">Clean up the Figma file with all of the avatars, buttons, and othercomponents.</span>
                                 </div>
                             </div>
 
@@ -1056,12 +1032,15 @@
 </template>
 
 <script>
-
 export default {
     name: 'Index',
-    props: {
-        msg: String
-    }
+    mounted() {
+        this.$root.$children[0].createChart('conversionsChart');
+        this.$root.$children[0].createChart('trafficChart');
+        this.$root.$children[0].createChart('sparklineChart');
+        this.$root.$children[0].createChart('salesChart');
+    },
+    methods: {}
 }
 </script>
 

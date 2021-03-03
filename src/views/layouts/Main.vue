@@ -1,14 +1,18 @@
 <template>
-    <div>
-        <NavBar :activeNabType="activeNabType" :activeNabSize="activeNabSize" :activeNavColor="activeNavColor" ref="navBar"/>
-        <div class="hello">
-            <SlideBarRight ref="slideBarRight"/>
+    <div class="hello">
+        <SlideBarRight ref="slideBarRight"/>
 
-            <!-- MAIN CONTENT ================================================== -->
-            <div class="main-content">
-                <CombBar ref="combBar" v-if="activeNabType == 'combo'"/>
-                <router-view ref="main"/>
-            </div>
+        <SidenavOrComboAndNotSmall :activeNabType="activeNabType" :activeNabSize="activeNabSize"
+                                   :activeNavColor="activeNavColor" ref="navBar"/>
+        <SidenavOrComboAndSmall :activeNabType="activeNabType" :activeNabSize="activeNabSize"
+                                :activeNavColor="activeNavColor" ref="navBar"/>
+        <TopNav :activeNabType="activeNabType" :activeNabSize="activeNabSize" :activeNavColor="activeNavColor"
+                ref="navBar"/>
+
+        <!-- MAIN CONTENT ================================================== -->
+        <div class="main-content">
+            <CombBar ref="combBar" v-if="activeNabType == 'combo'"/>
+            <router-view ref="main"/>
         </div>
     </div>
 </template>
@@ -17,11 +21,14 @@
 import setting from "@/services/SiteSetting";
 import SlideBarRight from "@/views/partials/SlideBarRight";
 import NavBar from "@/views/partials/NavBar";
+import SidenavOrComboAndSmall from "@/views/partials/nav/SidenavOrComboAndSmall";
+import TopNav from "@/views/partials/nav/TopNav";
+import SidenavOrComboAndNotSmall from "@/views/partials/nav/SidenavOrComboAndNotSmall";
 import CombBar from "@/views/partials/CombBar";
 
 export default {
     name: "Main",
-    components: {CombBar, NavBar, SlideBarRight},
+    components: {SidenavOrComboAndSmall, TopNav, SidenavOrComboAndNotSmall, CombBar, NavBar, SlideBarRight},
     data() {
         return {
             activeNabType: setting.getSetting('dashkitNavPosition'),
@@ -31,7 +38,7 @@ export default {
     },
     mounted() {
         setting.init();
-    }
+    },
 }
 </script>
 

@@ -1928,15 +1928,11 @@
 </template>
 
 <script>
-let setting = require("@/services/SiteSetting").default;
 export default {
     name: "NavBar",
     props: ['activeNabType', 'activeNabSize', 'activeNavColor'],
     data() {
-        return {
-            setting,
-            /*activeNavColor: setting.NavColors[setting.getSetting('dashkitNavColor')]*/
-        }
+        return {}
     },
     mounted() {
     },

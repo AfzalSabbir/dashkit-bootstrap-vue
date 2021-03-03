@@ -2,7 +2,8 @@ import Vue from 'vue'
 import VueRouter from "vue-router"
 import Index from '@/views/pages/Index'
 import Main from "@/views/layouts/Main"
-import ProjectManagement from "@/views/pages/ProjectManagement"
+import DashboardProjectManagement from "@/views/pages/DashboardProjectManagement"
+import DashboardECommerce from "@/views/pages/DashboardECommerce"
 
 Vue.use(VueRouter)
 
@@ -20,13 +21,20 @@ let router = new VueRouter({
                     component: Index,
                 },
                 {
-                    path: '/project-management',
-                    name: 'projectManagement',
-                    component: ProjectManagement,
+                    path: '/dashboard-project-management',
+                    name: 'dashboardProjectManagement',
+                    component: DashboardProjectManagement,
+                },
+                {
+                    path: '/dashboard-ecommerce',
+                    name: 'dashboardECommerce',
+                    component: DashboardECommerce,
                 }
             ]
         }
-    ]
+    ],
+    /*linkActiveClass: "active",*/
+    linkExactActiveClass: "active",
 })
 
 
