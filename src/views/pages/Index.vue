@@ -257,7 +257,7 @@
 
                                             <!-- Avatar -->
                                             <a href="project-overview.html" class="avatar avatar-4by3">
-                                                <img src="assets/img/avatars/projects/project-1.jpg" alt="..."
+                                                <img src="/assets/img/avatars/projects/project-1.jpg" alt="..."
                                                      class="avatar-img rounded">
                                             </a>
 
@@ -306,7 +306,7 @@
 
                                             <!-- Avatar -->
                                             <a href="project-overview.html" class="avatar avatar-4by3">
-                                                <img src="assets/img/avatars/projects/project-2.jpg" alt="..."
+                                                <img src="/assets/img/avatars/projects/project-2.jpg" alt="..."
                                                      class="avatar-img rounded">
                                             </a>
 
@@ -355,7 +355,7 @@
 
                                             <!-- Avatar -->
                                             <a href="project-overview.html" class="avatar avatar-4by3">
-                                                <img src="assets/img/avatars/projects/project-3.jpg" alt="..."
+                                                <img src="/assets/img/avatars/projects/project-3.jpg" alt="..."
                                                      class="avatar-img rounded">
                                             </a>
 
@@ -404,7 +404,7 @@
 
                                             <!-- Avatar -->
                                             <a href="project-overview.html" class="avatar avatar-4by3">
-                                                <img src="assets/img/avatars/projects/project-5.jpg" alt="..."
+                                                <img src="/assets/img/avatars/projects/project-5.jpg" alt="..."
                                                      class="avatar-img rounded">
                                             </a>
 
@@ -572,22 +572,22 @@
                                         <div class="avatar-group">
                                             <a href="profile-posts.html" class="avatar avatar-xs"
                                                data-toggle="tooltip" title="" data-original-title="Dianna Smiley">
-                                                <img src="assets/img/avatars/profiles/avatar-1.jpg"
+                                                <img src="/assets/img/avatars/profiles/avatar-1.jpg"
                                                      class="avatar-img rounded-circle" alt="...">
                                             </a>
                                             <a href="profile-posts.html" class="avatar avatar-xs"
                                                data-toggle="tooltip" title="" data-original-title="Ab Hadley">
-                                                <img src="assets/img/avatars/profiles/avatar-2.jpg"
+                                                <img src="/assets/img/avatars/profiles/avatar-2.jpg"
                                                      class="avatar-img rounded-circle" alt="...">
                                             </a>
                                             <a href="profile-posts.html" class="avatar avatar-xs"
                                                data-toggle="tooltip" title="" data-original-title="Adolfo Hess">
-                                                <img src="assets/img/avatars/profiles/avatar-3.jpg"
+                                                <img src="/assets/img/avatars/profiles/avatar-3.jpg"
                                                      class="avatar-img rounded-circle" alt="...">
                                             </a>
                                             <a href="profile-posts.html" class="avatar avatar-xs"
                                                data-toggle="tooltip" title="" data-original-title="Daniela Dewitt">
-                                                <img src="assets/img/avatars/profiles/avatar-4.jpg"
+                                                <img src="/assets/img/avatars/profiles/avatar-4.jpg"
                                                      class="avatar-img rounded-circle" alt="...">
                                             </a>
                                         </div>
@@ -629,17 +629,17 @@
                                         <div class="avatar-group justify-content-end">
                                             <a href="#!" class="avatar avatar-xs" data-toggle="tooltip" title=""
                                                data-original-title="Dianna Smiley">
-                                                <img src="assets/img/avatars/profiles/avatar-1.jpg"
+                                                <img src="/assets/img/avatars/profiles/avatar-1.jpg"
                                                      class="avatar-img rounded-circle" alt="...">
                                             </a>
                                             <a href="#!" class="avatar avatar-xs" data-toggle="tooltip" title=""
                                                data-original-title="Ab Hadley">
-                                                <img src="assets/img/avatars/profiles/avatar-2.jpg"
+                                                <img src="/assets/img/avatars/profiles/avatar-2.jpg"
                                                      class="avatar-img rounded-circle" alt="...">
                                             </a>
                                             <a href="#!" class="avatar avatar-xs" data-toggle="tooltip" title=""
                                                data-original-title="Adolfo Hess">
-                                                <img src="assets/img/avatars/profiles/avatar-3.jpg"
+                                                <img src="/assets/img/avatars/profiles/avatar-3.jpg"
                                                      class="avatar-img rounded-circle" alt="...">
                                             </a>
                                         </div>
@@ -681,17 +681,17 @@
                                         <div class="avatar-group justify-content-end">
                                             <a href="#!" class="avatar avatar-xs" data-toggle="tooltip" title=""
                                                data-original-title="Dianna Smiley">
-                                                <img src="assets/img/avatars/profiles/avatar-1.jpg"
+                                                <img src="/assets/img/avatars/profiles/avatar-1.jpg"
                                                      class="avatar-img rounded-circle" alt="...">
                                             </a>
                                             <a href="#!" class="avatar avatar-xs" data-toggle="tooltip" title=""
                                                data-original-title="Ab Hadley">
-                                                <img src="assets/img/avatars/profiles/avatar-2.jpg"
+                                                <img src="/assets/img/avatars/profiles/avatar-2.jpg"
                                                      class="avatar-img rounded-circle" alt="...">
                                             </a>
                                             <a href="#!" class="avatar avatar-xs" data-toggle="tooltip" title=""
                                                data-original-title="Adolfo Hess">
-                                                <img src="assets/img/avatars/profiles/avatar-3.jpg"
+                                                <img src="/assets/img/avatars/profiles/avatar-3.jpg"
                                                      class="avatar-img rounded-circle" alt="...">
                                             </a>
                                         </div>
@@ -733,12 +733,12 @@
                                         <div class="avatar-group justify-content-end">
                                             <a href="#!" class="avatar avatar-xs" data-toggle="tooltip" title=""
                                                data-original-title="Dianna Smiley">
-                                                <img src="assets/img/avatars/profiles/avatar-1.jpg"
+                                                <img src="/assets/img/avatars/profiles/avatar-1.jpg"
                                                      class="avatar-img rounded-circle" alt="...">
                                             </a>
                                             <a href="#!" class="avatar avatar-xs" data-toggle="tooltip" title=""
                                                data-original-title="Ab Hadley">
-                                                <img src="assets/img/avatars/profiles/avatar-2.jpg"
+                                                <img src="/assets/img/avatars/profiles/avatar-2.jpg"
                                                      class="avatar-img rounded-circle" alt="...">
                                             </a>
                                         </div>
@@ -780,22 +780,22 @@
                                         <div class="avatar-group justify-content-end">
                                             <a href="#!" class="avatar avatar-xs" data-toggle="tooltip" title=""
                                                data-original-title="Dianna Smiley">
-                                                <img src="assets/img/avatars/profiles/avatar-1.jpg"
+                                                <img src="/assets/img/avatars/profiles/avatar-1.jpg"
                                                      class="avatar-img rounded-circle" alt="...">
                                             </a>
                                             <a href="#!" class="avatar avatar-xs" data-toggle="tooltip" title=""
                                                data-original-title="Ab Hadley">
-                                                <img src="assets/img/avatars/profiles/avatar-2.jpg"
+                                                <img src="/assets/img/avatars/profiles/avatar-2.jpg"
                                                      class="avatar-img rounded-circle" alt="...">
                                             </a>
                                             <a href="#!" class="avatar avatar-xs" data-toggle="tooltip" title=""
                                                data-original-title="Adolfo Hess">
-                                                <img src="assets/img/avatars/profiles/avatar-3.jpg"
+                                                <img src="/assets/img/avatars/profiles/avatar-3.jpg"
                                                      class="avatar-img rounded-circle" alt="...">
                                             </a>
                                             <a href="#!" class="avatar avatar-xs" data-toggle="tooltip" title=""
                                                data-original-title="Daniela Dewitt">
-                                                <img src="assets/img/avatars/profiles/avatar-4.jpg"
+                                                <img src="/assets/img/avatars/profiles/avatar-4.jpg"
                                                      class="avatar-img rounded-circle" alt="...">
                                             </a>
                                         </div>
@@ -854,7 +854,7 @@
                                             <!-- Avatar -->
                                             <div class="avatar avatar-sm avatar-online">
                                                 <img class="avatar-img rounded-circle"
-                                                     src="assets/img/avatars/profiles/avatar-1.jpg" alt="..."/>
+                                                     src="/assets/img/avatars/profiles/avatar-1.jpg" alt="..."/>
                                             </div>
 
                                         </div>
@@ -885,7 +885,7 @@
                                             <!-- Avatar -->
                                             <div class="avatar avatar-sm avatar-online">
                                                 <img class="avatar-img rounded-circle"
-                                                     src="assets/img/avatars/profiles/avatar-2.jpg" alt="..."/>
+                                                     src="/assets/img/avatars/profiles/avatar-2.jpg" alt="..."/>
                                             </div>
 
                                         </div>
@@ -916,7 +916,7 @@
                                             <!-- Avatar -->
                                             <div class="avatar avatar-sm avatar-offline">
                                                 <img class="avatar-img rounded-circle"
-                                                     src="assets/img/avatars/profiles/avatar-3.jpg" alt="..."/>
+                                                     src="/assets/img/avatars/profiles/avatar-3.jpg" alt="..."/>
                                             </div>
 
                                         </div>

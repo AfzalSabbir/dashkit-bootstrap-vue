@@ -11,7 +11,7 @@
 
             <!-- Brand -->
             <router-link class="navbar-brand" to="/">
-                <img src="assets/img/logo.svg" class="navbar-brand-img mx-auto" alt="...">
+                <img src="/assets/img/logo.svg" class="navbar-brand-img mx-auto" alt="...">
             </router-link>
 
             <!-- User (xs) -->
@@ -24,7 +24,7 @@
                     <a href="#" id="sidebarIcon" class="dropdown-toggle" role="button" data-toggle="dropdown"
                        aria-haspopup="true" aria-expanded="false">
                         <div class="avatar avatar-sm avatar-online">
-                            <img src="assets/img/avatars/profiles/avatar-1.jpg" class="avatar-img rounded-circle"
+                            <img src="/assets/img/avatars/profiles/avatar-1.jpg" class="avatar-img rounded-circle"
                                  alt="...">
                         </div>
                     </a>
@@ -639,7 +639,7 @@
                         <a href="#" id="sidebarIconCopy" class="dropdown-toggle" role="button"
                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <div class="avatar avatar-sm avatar-online">
-                                <img src="assets/img/avatars/profiles/avatar-1.jpg"
+                                <img src="/assets/img/avatars/profiles/avatar-1.jpg"
                                      class="avatar-img rounded-circle" alt="...">
                             </div>
                         </a>

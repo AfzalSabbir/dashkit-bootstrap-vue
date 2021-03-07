@@ -37,6 +37,7 @@ export default {
         }
     },
     mounted() {
+        //data:image/png;base64,MDEyMzEyMzEyMw==
         setting.init();
     },
 }

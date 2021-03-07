@@ -12,7 +12,7 @@
 
             <!-- Brand -->
             <router-link class="navbar-brand mr-auto" to="/">
-                <img src="assets/img/logo.svg" alt="..." class="navbar-brand-img">
+                <img src="/assets/img/logo.svg" alt="..." class="navbar-brand-img">
             </router-link>
 
             <!-- Form -->
@@ -40,7 +40,7 @@
 
                                             <!-- Avatar -->
                                             <div class="avatar">
-                                                <img src="assets/img/avatars/teams/team-logo-1.jpg" alt="..."
+                                                <img src="/assets/img/avatars/teams/team-logo-1.jpg" alt="..."
                                                      class="avatar-img rounded">
                                             </div>
 
@@ -67,7 +67,7 @@
 
                                             <!-- Avatar -->
                                             <div class="avatar">
-                                                <img src="assets/img/avatars/teams/team-logo-2.jpg" alt="..."
+                                                <img src="/assets/img/avatars/teams/team-logo-2.jpg" alt="..."
                                                      class="avatar-img rounded">
                                             </div>
 
@@ -94,7 +94,7 @@
 
                                             <!-- Avatar -->
                                             <div class="avatar avatar-4by3">
-                                                <img src="assets/img/avatars/projects/project-1.jpg" alt="..."
+                                                <img src="/assets/img/avatars/projects/project-1.jpg" alt="..."
                                                      class="avatar-img rounded">
                                             </div>
 
@@ -121,7 +121,7 @@
 
                                             <!-- Avatar -->
                                             <div class="avatar avatar-4by3">
-                                                <img src="assets/img/avatars/projects/project-2.jpg" alt="..."
+                                                <img src="/assets/img/avatars/projects/project-2.jpg" alt="..."
                                                      class="avatar-img rounded">
                                             </div>
 
@@ -148,7 +148,7 @@
 
                                             <!-- Avatar -->
                                             <div class="avatar avatar-4by3">
-                                                <img src="assets/img/avatars/projects/project-3.jpg" alt="..."
+                                                <img src="/assets/img/avatars/projects/project-3.jpg" alt="..."
                                                      class="avatar-img rounded">
                                             </div>
 
@@ -169,13 +169,13 @@
                                         </div>
                                     </div> <!-- / .row -->
                                 </a>
-                                <a class="list-group-item" href="profile-posts.html">
+                                <router-link class="list-group-item" :to="{name: 'pagesProfilePosts'}">
                                     <div class="row align-items-center">
                                         <div class="col-auto">
 
                                             <!-- Avatar -->
                                             <div class="avatar">
-                                                <img src="assets/img/avatars/profiles/avatar-1.jpg" alt="..."
+                                                <img src="/assets/img/avatars/profiles/avatar-1.jpg" alt="..."
                                                      class="avatar-img rounded-circle">
                                             </div>
 
@@ -194,14 +194,14 @@
 
                                         </div>
                                     </div> <!-- / .row -->
-                                </a>
-                                <a class="list-group-item" href="profile-posts.html">
+                                </router-link>
+                                <router-link class="list-group-item" :to="{name: 'pagesProfilePosts'}">
                                     <div class="row align-items-center">
                                         <div class="col-auto">
 
                                             <!-- Avatar -->
                                             <div class="avatar">
-                                                <img src="assets/img/avatars/profiles/avatar-2.jpg" alt="..."
+                                                <img src="/assets/img/avatars/profiles/avatar-2.jpg" alt="..."
                                                      class="avatar-img rounded-circle">
                                             </div>
 
@@ -220,7 +220,7 @@
 
                                         </div>
                                     </div> <!-- / .row -->
-                                </a>
+                                </router-link>
                             </div>
 
                         </div>
@@ -268,7 +268,7 @@
 
                                             <!-- Avatar -->
                                             <div class="avatar avatar-sm">
-                                                <img src="assets/img/avatars/profiles/avatar-1.jpg" alt="..."
+                                                <img src="/assets/img/avatars/profiles/avatar-1.jpg" alt="..."
                                                      class="avatar-img rounded-circle">
                                             </div>
 
@@ -295,7 +295,7 @@
 
                                             <!-- Avatar -->
                                             <div class="avatar avatar-sm">
-                                                <img src="assets/img/avatars/profiles/avatar-2.jpg" alt="..."
+                                                <img src="/assets/img/avatars/profiles/avatar-2.jpg" alt="..."
                                                      class="avatar-img rounded-circle">
                                             </div>
 
@@ -321,7 +321,7 @@
 
                                             <!-- Avatar -->
                                             <div class="avatar avatar-sm">
-                                                <img src="assets/img/avatars/profiles/avatar-3.jpg" alt="..."
+                                                <img src="/assets/img/avatars/profiles/avatar-3.jpg" alt="..."
                                                      class="avatar-img rounded-circle">
                                             </div>
 
@@ -350,7 +350,7 @@
 
                                             <!-- Avatar -->
                                             <div class="avatar avatar-sm">
-                                                <img src="assets/img/avatars/profiles/avatar-4.jpg" alt="..."
+                                                <img src="/assets/img/avatars/profiles/avatar-4.jpg" alt="..."
                                                      class="avatar-img rounded-circle">
                                             </div>
 
@@ -376,7 +376,7 @@
 
                                             <!-- Avatar -->
                                             <div class="avatar avatar-sm">
-                                                <img src="assets/img/avatars/profiles/avatar-5.jpg" alt="..."
+                                                <img src="/assets/img/avatars/profiles/avatar-5.jpg" alt="..."
                                                      class="avatar-img rounded-circle">
                                             </div>
 
@@ -403,7 +403,7 @@
 
                                             <!-- Avatar -->
                                             <div class="avatar avatar-sm">
-                                                <img src="assets/img/avatars/profiles/avatar-6.jpg" alt="..."
+                                                <img src="/assets/img/avatars/profiles/avatar-6.jpg" alt="..."
                                                      class="avatar-img rounded-circle">
                                             </div>
 
@@ -429,7 +429,7 @@
 
                                             <!-- Avatar -->
                                             <div class="avatar avatar-sm">
-                                                <img src="assets/img/avatars/profiles/avatar-7.jpg" alt="..."
+                                                <img src="/assets/img/avatars/profiles/avatar-7.jpg" alt="..."
                                                      class="avatar-img rounded-circle">
                                             </div>
 
@@ -458,7 +458,7 @@
 
                                             <!-- Avatar -->
                                             <div class="avatar avatar-sm">
-                                                <img src="assets/img/avatars/profiles/avatar-8.jpg" alt="..."
+                                                <img src="/assets/img/avatars/profiles/avatar-8.jpg" alt="..."
                                                      class="avatar-img rounded-circle">
                                             </div>
 
@@ -491,7 +491,7 @@
                     <!-- Toggle -->
                     <a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button"
                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <img src="assets/img/avatars/profiles/avatar-1.jpg" alt="..."
+                        <img src="/assets/img/avatars/profiles/avatar-1.jpg" alt="..."
                              class="avatar-img rounded-circle">
                     </a>
 
@@ -519,95 +519,95 @@
                 <!-- Navigation -->
                 <ul class="navbar-nav mr-lg-auto">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="#" id="topnavDashboards" role="button"
+                        <a class="nav-link dropdown-toggle" :class="$root.isActive('/dashboard')" html="#" id="topnavDashboards" role="button"
                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Dashboards
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="topnavDashboards">
                             <li>
-                                <router-link class="dropdown-item" :to="{name: 'home'}">
+                                <router-link class="dropdown-item" :to="{name: 'dashboard'}" exact>
                                     Default
                                 </router-link>
                             </li>
                             <li>
-                                <router-link class="dropdown-item " :to="{name: 'dashboardProjectManagement'}">
+                                <router-link class="dropdown-item " :to="{name: 'dashboardProjectManagement'}" exact>
                                     Project Management
                                 </router-link>
                             </li>
                             <li>
-                                <router-link class="dropdown-item " :to="{name: 'dashboardECommerce'}">
+                                <router-link class="dropdown-item " :to="{name: 'dashboardECommerce'}" exact>
                                     E-Commerce
                                 </router-link>
                             </li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle " href="#" id="topnavPages" role="button"
+                        <a class="nav-link dropdown-toggle " :class="$root.isActive('/pages')" id="topnavPages" role="button"
                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Pages
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="topnavPages">
                             <li class="dropright">
-                                <a class="dropdown-item dropdown-toggle " href="#" id="topnavProfile" role="button"
+                                <a class="dropdown-item dropdown-toggle " :class="$root.isActive('/pages/profile')" href="#" id="topnavProfile" role="button"
                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Profile
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="topnavProfile">
-                                    <a class="dropdown-item " href="profile-posts.html">
+                                    <router-link class="dropdown-item " :to="{name: 'pagesProfilePosts'}" exact>
                                         Posts
-                                    </a>
-                                    <a class="dropdown-item " href="profile-groups.html">
+                                    </router-link>
+                                    <router-link class="dropdown-item " :to="{name: 'pagesProfileGroups'}" exact>
                                         Groups
-                                    </a>
-                                    <a class="dropdown-item " href="profile-projects.html">
+                                    </router-link>
+                                    <router-link class="dropdown-item " :to="{name: 'pagesProfileProjects'}" exact>
                                         Projects
-                                    </a>
-                                    <a class="dropdown-item " href="profile-files.html">
+                                    </router-link>
+                                    <router-link class="dropdown-item " :to="{name: 'pagesProfileFiles'}" exact>
                                         Files
-                                    </a>
-                                    <a class="dropdown-item " href="profile-subscribers.html">
+                                    </router-link>
+                                    <router-link class="dropdown-item " :to="{name: 'pagesProfileSubscribers'}" exact>
                                         Subscribers
-                                    </a>
+                                    </router-link>
                                 </div>
                             </li>
                             <li class="dropright">
-                                <a class="dropdown-item dropdown-toggle " href="#" id="topnavProject" role="button"
+                                <a class="dropdown-item dropdown-toggle " :class="$root.isActive('/pages/project')" href="#" id="topnavProject" role="button"
                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Project
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="topnavProject">
-                                    <a class="dropdown-item " href="project-overview.html">
+                                    <router-link class="dropdown-item " :to="{name: 'pagesProjectOverview'}" exact>
                                         Overview
-                                    </a>
-                                    <a class="dropdown-item " href="project-files.html">
+                                    </router-link>
+                                    <router-link class="dropdown-item " :to="{name: 'pagesProjectFiles'}" exact>
                                         Files
-                                    </a>
-                                    <a class="dropdown-item " href="project-reports.html">
+                                    </router-link>
+                                    <router-link class="dropdown-item " :to="{name: 'pagesProjectReports'}" exact>
                                         Reports
-                                    </a>
-                                    <a class="dropdown-item " href="project-new.html">
+                                    </router-link>
+                                    <router-link class="dropdown-item " :to="{name: 'pagesProjectNewProject'}" exact>
                                         New project
-                                    </a>
+                                    </router-link>
                                 </div>
                             </li>
                             <li class="dropright">
-                                <a class="dropdown-item dropdown-toggle " href="#" id="topnavTeam" role="button"
+                                <a class="dropdown-item dropdown-toggle " :class="$root.isActive('/pages/team')" href="#" id="topnavTeam" role="button"
                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Team
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="topnavTeam">
-                                    <a class="dropdown-item " href="team-overview.html">
+                                    <router-link class="dropdown-item " :to="{name: 'pagesTeamOverview'}" exact>
                                         Overview
-                                    </a>
-                                    <a class="dropdown-item " href="team-projects.html">
+                                    </router-link>
+                                    <router-link class="dropdown-item " :to="{name: 'pagesTeamProjects'}" exact>
                                         Projects
-                                    </a>
-                                    <a class="dropdown-item " href="team-members.html">
+                                    </router-link>
+                                    <router-link class="dropdown-item " :to="{name: 'pagesTeamMembers'}" exact>
                                         Members
-                                    </a>
-                                    <a class="dropdown-item " href="team-new.html">
+                                    </router-link>
+                                    <router-link class="dropdown-item " :to="{name: 'pagesTeamNewTeam'}" exact>
                                         New team
-                                    </a>
+                                    </router-link>
                                 </div>
                             </li>
                             <li class="dropright">

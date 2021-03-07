@@ -24,6 +24,9 @@ export default {
                     options: data[dataKey].options,
                 });
             }, 0);
+        },
+        isActive(path) {
+            return _.startsWith(this.$route.fullPath, path) ? 'active':'';
         }
     },
     watch: {

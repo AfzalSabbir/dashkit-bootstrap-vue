@@ -19,8 +19,5 @@ import ("../public/assets/libs/chart.js/Chart.extension.js");*/
 
 import App from './App.vue'
 import store from './store'
-const Vue = createApp(App)
 
-Vue.use(store)
-Vue.use(router)
-Vue.mount('#app')
+const Vue = createApp(App).use(store).use(router).mount('#app')

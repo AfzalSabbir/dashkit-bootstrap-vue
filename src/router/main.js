@@ -3,35 +3,136 @@ import Index from '@/views/pages/Index'
 import Main from "@/views/layouts/Main"
 import DashboardProjectManagement from "@/views/pages/DashboardProjectManagement"
 import DashboardECommerce from "@/views/pages/DashboardECommerce"
+import Post from "@/views/pages/profile/Post"
+import e404 from "@/views/pages/error/e404"
 
 const routes = [
     {
         path: '/',
-        name: 'mainLayout',
+        name: 'home',
         component: Main,
         children: [
             {
                 path: '/',
-                name: 'home',
+                redirect: '/dashboard'
+            }
+        ]
+    },
+    {
+        path: '/dashboard',
+        name: 'mainLayout',
+        component: Main,
+        children: [
+            {
+                path: '/dashboard',
+                name: 'dashboard',
                 component: Index,
             },
             {
-                path: '/dashboard-project-management',
+                path: '/dashboard/dashboard-project-management',
                 name: 'dashboardProjectManagement',
                 component: DashboardProjectManagement,
             },
             {
-                path: '/dashboard-ecommerce',
+                path: '/dashboard/dashboard-ecommerce',
                 name: 'dashboardECommerce',
                 component: DashboardECommerce,
+            },
+        ]
+    },
+    {
+        path: '/pages',
+        name: 'pages',
+        component: Main,
+        children: [
+            {
+                path: 'profile/posts',
+                name: 'pagesProfilePosts',
+                component: Post,
+            },
+            {
+                path: 'profile/groups',
+                name: 'pagesProfileGroups',
+                component: Post,
+            },
+            {
+                path: 'profile/projects',
+                name: 'pagesProfileProjects',
+                component: Post,
+            },
+            {
+                path: 'profile/files',
+                name: 'pagesProfileFiles',
+                component: Post,
+            },
+            {
+                path: 'profile/subscribers',
+                name: 'pagesProfileSubscribers',
+                component: Post,
+            },
+
+            {
+                path: 'project/overview',
+                name: 'pagesProjectOverview',
+                component: Post,
+            },
+            {
+                path: 'project/files',
+                name: 'pagesProjectFiles',
+                component: Post,
+            },
+            {
+                path: 'project/reports',
+                name: 'pagesProjectReports',
+                component: Post,
+            },
+            {
+                path: 'project/new',
+                name: 'pagesProjectNewProject',
+                component: Post,
+            },
+
+            {
+                path: 'team/overview',
+                name: 'pagesTeamOverview',
+                component: Post,
+            },
+            {
+                path: 'team/files',
+                name: 'pagesTeamProjects',
+                component: Post,
+            },
+            {
+                path: 'team/reports',
+                name: 'pagesTeamMembers',
+                component: Post,
+            },
+            {
+                path: 'team/new',
+                name: 'pagesTeamNewTeam',
+                component: Post,
+            },
+        ]
+    },
+    {
+        path: '/404',
+        component: Main,
+        children: [
+            {
+                path: '/',
+                name: '404',
+                component: e404,
             }
         ]
-    }
+    },
+    {path: '/:catchAll(.*)', redirect: '/404'},
 ]
 
 const router = createRouter({
     history: createWebHistory(process.env.BASE_URL),
-    routes
+    routes,
+    linkExactActiveClass: 'active',
+    linkActiveClass: 'active'
 })
 
 export default router

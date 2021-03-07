@@ -1,5 +1,5 @@
 # dashkit-bootstrap-vue
-- A frontend vuejs project which contains sidebar as dashboard and topbar as website of different color with dark & light theme in build and many more options with bootstrap v4.6.0
+- A frontend vuejs(v3) project which contains sidebar as dashboard and topbar as website of different color with dark & light theme in build and many more options with bootstrap v4.6.0
 
 ## Project setup
 ```
