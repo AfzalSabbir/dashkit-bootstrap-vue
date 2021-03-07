@@ -12,17 +12,16 @@ export default {
     name: 'App',
     components: {},
     mounted() {
-        //setting.resetDefault();
     },
     methods: {
-        createChart(chartId) {
+        createChart(chartId, dataKey = chartId) {
 
             setTimeout(() => {
                 const ctx = document.getElementById(chartId);
                 const myChart = new Chart(ctx, {
-                    type: data[chartId].type,
-                    data: data[chartId].data,
-                    options: data[chartId].options,
+                    type: data[dataKey].type,
+                    data: data[dataKey].data,
+                    options: data[dataKey].options,
                 });
             }, 0);
         }
@@ -30,8 +29,7 @@ export default {
     watch: {
         "$route": (newVal, oldVal) => {
             if (newVal != oldVal) {
-                // $.getScript('/assets/libs/chart.js/dist/Chart.min.js', function() {})
-                // $.getScript('/assets/libs/chart.js/Chart.extension.js', function() {})
+                // action for every route change
             }
         }
     }
@@ -39,6 +37,4 @@ export default {
 </script>
 
 <style>
-#app {
-}
 </style>

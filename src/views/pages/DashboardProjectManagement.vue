@@ -1342,9 +1342,9 @@
 export default {
     name: "DashboardProjectManagement",
     mounted() {
-        this.$root.$children[0].createChart('earningsChart');
-        this.$root.$children[0].createChart('trafficChart');
-        this.$root.$children[0].createChart('sparklineChart');
+        this.$root.createChart('earningsChart');
+        this.$root.createChart('trafficChart');
+        this.$root.createChart('sparklineChart');
     },
 }
 </script>

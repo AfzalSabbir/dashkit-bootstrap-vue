@@ -1035,10 +1035,10 @@
 export default {
     name: 'Index',
     mounted() {
-        this.$root.$children[0].createChart('conversionsChart');
-        this.$root.$children[0].createChart('trafficChart');
-        this.$root.$children[0].createChart('sparklineChart');
-        this.$root.$children[0].createChart('salesChart');
+        this.$root.createChart('conversionsChart');
+        this.$root.createChart('trafficChart');
+        this.$root.createChart('sparklineChart');
+        this.$root.createChart('salesChart');
     },
     methods: {}
 }

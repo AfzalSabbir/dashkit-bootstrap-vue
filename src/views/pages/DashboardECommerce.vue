@@ -783,10 +783,10 @@
 export default {
     name: "DashboardECommerce",
     mounted() {
-        this.$root.$children[0].createChart('audienceChart');
-        this.$root.$children[0].createChart('ordersChart');
-        this.$root.$children[0].createChart('trafficChart');
-        this.$root.$children[0].createChart('sparklineChart');
+        this.$root.createChart('audienceChart');
+        this.$root.createChart('ordersChart');
+        this.$root.createChart('trafficChart');
+        this.$root.createChart('sparklineChart');
     },
 }
 </script>

@@ -1,5 +1,4 @@
-import Vue from 'vue'
-import VueRouter from "vue-router"
+import { createApp } from 'vue'
 import router from './router/main'
 window.$ = window.jquery = window.jQuery = require('jquery');
 window._ = window.lodash = require('lodash');
@@ -19,11 +18,9 @@ import ("../public/assets/libs/select2/dist/js/select2.full.min.js");
 import ("../public/assets/libs/chart.js/Chart.extension.js");*/
 
 import App from './App.vue'
+import store from './store'
+const Vue = createApp(App)
 
-Vue.use(VueRouter)
-Vue.config.productionTip = false
-
-new Vue({
-    render: h => h(App),
-    router
-}).$mount('#app')
+Vue.use(store)
+Vue.use(router)
+Vue.mount('#app')
