@@ -611,40 +611,40 @@
                                 </div>
                             </li>
                             <li class="dropright">
-                                <a class="dropdown-item dropdown-toggle " href="#" id="topnavFeed" role="button"
+                                <a class="dropdown-item dropdown-toggle " :class="$root.isActive('/pages/feed')" href="#" id="topnavFeed" role="button"
                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Feed
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="topnavFeed">
-                                    <a class="dropdown-item " href="feed.html">
+                                    <router-link class="dropdown-item " :to="{name: 'pagesFeed'}" exact>
                                         Platform
-                                    </a>
-                                    <a class="dropdown-item " href="social-feed.html">
+                                    </router-link>
+                                    <router-link class="dropdown-item " :to="{name: 'pagesFeedSocial'}" exact>
                                         Social
-                                    </a>
+                                    </router-link>
                                 </div>
                             </li>
                             <li class="dropright">
-                                <a class="dropdown-item dropdown-toggle " href="#" id="topnavAccount" role="button"
+                                <a class="dropdown-item dropdown-toggle " :class="$root.isActive('/pages/account')" href="#" id="topnavAccount" role="button"
                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Account
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="topnavAccount">
-                                    <a class="dropdown-item " href="account-general.html">
+                                    <router-link class="dropdown-item " :to="{name: 'pagesAccountGeneral'}">
                                         General
-                                    </a>
-                                    <a class="dropdown-item " href="account-billing.html">
+                                    </router-link>
+                                    <router-link class="dropdown-item " :to="{name: 'pagesAccountBilling'}">
                                         Billing
-                                    </a>
-                                    <a class="dropdown-item " href="account-members.html">
+                                    </router-link>
+                                    <router-link class="dropdown-item " :to="{name: 'pagesAccountMembers'}">
                                         Members
-                                    </a>
-                                    <a class="dropdown-item " href="account-security.html">
+                                    </router-link>
+                                    <router-link class="dropdown-item " :to="{name: 'pagesAccountSecurity'}">
                                         Security
-                                    </a>
-                                    <a class="dropdown-item " href="account-notifications.html">
+                                    </router-link>
+                                    <router-link class="dropdown-item " :to="{name: 'pagesAccountNotifications'}">
                                         Notifications
-                                    </a>
+                                    </router-link>
                                 </div>
                             </li>
                             <li class="dropright">
@@ -653,46 +653,46 @@
                                     CRM
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="topnavCrm">
-                                    <a class="dropdown-item " href="crm-contacts.html">
+                                    <router-link class="dropdown-item " :to="{name: 'pagesCRMContacts'}">
                                         Contacts
-                                    </a>
-                                    <a class="dropdown-item " href="crm-companies.html">
+                                    </router-link>
+                                    <router-link class="dropdown-item " :to="{name: 'pagesCRMCompanies'}">
                                         Companies
-                                    </a>
-                                    <a class="dropdown-item " href="crm-deals.html">
+                                    </router-link>
+                                    <router-link class="dropdown-item " :to="{name: 'pagesCRMDeals'}">
                                         Deals
-                                    </a>
+                                    </router-link>
                                 </div>
                             </li>
                             <li>
-                                <a class="dropdown-item " href="wizard.html">
+                                <router-link class="dropdown-item " :to="{name: 'pagesWizard'}">
                                     Wizard
-                                </a>
+                                </router-link>
                             </li>
                             <li>
-                                <a class="dropdown-item " href="kanban.html">
+                                <router-link class="dropdown-item " :to="{name: 'pagesKanban'}">
                                     Kanban
-                                </a>
+                                </router-link>
                             </li>
                             <li>
-                                <a class="dropdown-item " href="orders.html">
+                                <router-link class="dropdown-item " :to="{name: 'pagesOrders'}">
                                     Orders
-                                </a>
+                                </router-link>
                             </li>
                             <li>
-                                <a class="dropdown-item " href="invoice.html">
+                                <router-link class="dropdown-item " :to="{name: 'pagesInvoice'}">
                                     Invoice
-                                </a>
+                                </router-link>
                             </li>
                             <li>
-                                <a class="dropdown-item " href="pricing.html">
+                                <router-link class="dropdown-item " :to="{name: 'pagesPricing'}">
                                     Pricing
-                                </a>
+                                </router-link>
                             </li>
                             <li>
-                                <a class="dropdown-item " href="widgets.html">
+                                <router-link class="dropdown-item " :to="{name: 'pagesWidgets'}">
                                     Widgets
-                                </a>
+                                </router-link>
                             </li>
                         </ul>
                     </li>

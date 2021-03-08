@@ -3,7 +3,7 @@ import Index from '@/views/pages/Index'
 import Main from "@/views/layouts/Main"
 import DashboardProjectManagement from "@/views/pages/DashboardProjectManagement"
 import DashboardECommerce from "@/views/pages/DashboardECommerce"
-import Post from "@/views/pages/profile/Post"
+import Post from "@/views/pages/pages/profile/Posts"
 import e404 from "@/views/pages/error/e404"
 
 const routes = [
@@ -110,6 +110,86 @@ const routes = [
             {
                 path: 'team/new',
                 name: 'pagesTeamNewTeam',
+                component: Post,
+            },
+            {
+                path: 'feed',
+                name: 'pagesFeed',
+                component: Post,
+            },
+            {
+                path: 'feed/social',
+                name: 'pagesFeedSocial',
+                component: Post,
+            },
+            {
+                path: 'account/general',
+                name: 'pagesAccountGeneral',
+                component: Post,
+            },
+            {
+                path: 'account/billing',
+                name: 'pagesAccountBilling',
+                component: Post,
+            },
+            {
+                path: 'account/members',
+                name: 'pagesAccountMembers',
+                component: Post,
+            },
+            {
+                path: 'account/security',
+                name: 'pagesAccountSecurity',
+                component: Post,
+            },
+            {
+                path: 'account/notifications',
+                name: 'pagesAccountNotifications',
+                component: Post,
+            },
+            {
+                path: 'crm/contacts',
+                name: 'pagesCRMContacts',
+                component: Post,
+            },
+            {
+                path: 'crm/companies',
+                name: 'pagesCRMCompanies',
+                component: Post,
+            },
+            {
+                path: 'crm/deals',
+                name: 'pagesCRMDeals',
+                component: Post,
+            },
+            {
+                path: 'wizard',
+                name: 'pagesWizard',
+                component: Post,
+            },
+            {
+                path: 'kanban',
+                name: 'pagesKanban',
+                component: Post,
+            },
+            {
+                path: 'orders',
+                name: 'pagesOrders',
+                component: Post,
+            },
+            {
+                path: 'invoice',
+                name: 'pagesInvoice',
+                component: Post,
+            },
+            {
+                path: 'pricing',
+                name: 'pagesPricing',
+                component: Post,
+            },
+            {
+                path: 'widgets',
+                name: 'pagesWidgets',
                 component: Post,
             },
         ]
