@@ -1,9 +1,24 @@
 import {createRouter, createWebHistory} from 'vue-router'
-import Index from '@/views/pages/Index'
+
 import Main from "@/views/layouts/Main"
+
+import PagesProfileIndex from '@/views/pages/pages/profile/Index'
+import Post from "@/views/pages/pages/profile/Posts"
+import Groups from "@/views/pages/pages/profile/Groups"
+import Projects from "@/views/pages/pages/profile/Projects"
+import ProfileFiles from "@/views/pages/pages/profile/Files"
+import Subscribers from "@/views/pages/pages/profile/Subscribers"
+
+import PagesProjectIndex from '@/views/pages/pages/project/Index'
+import Overview from "@/views/pages/pages/project/Overview"
+import ProjectFiles from "@/views/pages/pages/project/Files"
+import Reports from "@/views/pages/pages/project/Reports"
+import NewProject from "@/views/pages/pages/project/NewProject"
+
+import Index from "@/views/pages/Index"
 import DashboardProjectManagement from "@/views/pages/DashboardProjectManagement"
 import DashboardECommerce from "@/views/pages/DashboardECommerce"
-import Post from "@/views/pages/pages/profile/Posts"
+
 import e404 from "@/views/pages/error/e404"
 
 const routes = [
@@ -46,50 +61,63 @@ const routes = [
         component: Main,
         children: [
             {
-                path: 'profile/posts',
-                name: 'pagesProfilePosts',
-                component: Post,
+                path: 'profile',
+                name: 'profile',
+                component: PagesProfileIndex,
+                children: [
+                    {
+                        path: 'posts',
+                        name: 'pagesProfilePosts',
+                        component: Post,
+                    },
+                    {
+                        path: 'groups',
+                        name: 'pagesProfileGroups',
+                        component: Groups,
+                    },
+                    {
+                        path: 'projects',
+                        name: 'pagesProfileProjects',
+                        component: Projects,
+                    },
+                    {
+                        path: 'files',
+                        name: 'pagesProfileFiles',
+                        component: ProfileFiles,
+                    },
+                    {
+                        path: 'subscribers',
+                        name: 'pagesProfileSubscribers',
+                        component: Subscribers,
+                    },
+                ]
             },
             {
-                path: 'profile/groups',
-                name: 'pagesProfileGroups',
-                component: Post,
-            },
-            {
-                path: 'profile/projects',
-                name: 'pagesProfileProjects',
-                component: Post,
-            },
-            {
-                path: 'profile/files',
-                name: 'pagesProfileFiles',
-                component: Post,
-            },
-            {
-                path: 'profile/subscribers',
-                name: 'pagesProfileSubscribers',
-                component: Post,
-            },
-
-            {
-                path: 'project/overview',
-                name: 'pagesProjectOverview',
-                component: Post,
-            },
-            {
-                path: 'project/files',
-                name: 'pagesProjectFiles',
-                component: Post,
-            },
-            {
-                path: 'project/reports',
-                name: 'pagesProjectReports',
-                component: Post,
-            },
-            {
-                path: 'project/new',
-                name: 'pagesProjectNewProject',
-                component: Post,
+                path: 'project',
+                name: 'project',
+                component: PagesProjectIndex,
+                children: [
+                    {
+                        path: 'overview',
+                        name: 'pagesProjectOverview',
+                        component: Overview,
+                    },
+                    {
+                        path: 'files',
+                        name: 'pagesProjectFiles',
+                        component: ProjectFiles,
+                    },
+                    {
+                        path: 'reports',
+                        name: 'pagesProjectReports',
+                        component: Reports,
+                    },
+                    {
+                        path: 'new',
+                        name: 'pagesProjectNewProject',
+                        component: NewProject,
+                    },
+                ]
             },
 
             {
@@ -112,6 +140,7 @@ const routes = [
                 name: 'pagesTeamNewTeam',
                 component: Post,
             },
+
             {
                 path: 'feed',
                 name: 'pagesFeed',
