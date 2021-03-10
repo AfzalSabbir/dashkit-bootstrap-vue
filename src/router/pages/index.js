@@ -15,50 +15,49 @@ import PagesWidgets from "@/views/pages/pages/Widgets"
 import PagesWizard from "@/views/pages/pages/Wizard"
 
 
-const pagesRoutes = [
-    {
-        path: '/pages',
-        name: 'pages',
-        component: LayoutMain,
-        children: [
-            accountRoutes,
-            feedRoutes,
-            profileRoutes,
-            projectRoutes,
-            teamRoutes,
-            crmRoutes,
-            {
-                path: 'invoice',
-                name: 'pagesInvoice',
-                component: PagesInvoice,
-            },
-            {
-                path: 'kanban',
-                name: 'pagesKanban',
-                component: PagesKanban,
-            },
-            {
-                path: 'orders',
-                name: 'pagesOrders',
-                component: PagesOrders,
-            },
-            {
-                path: 'pricing',
-                name: 'pagesPricing',
-                component: PagesPricing,
-            },
-            {
-                path: 'widgets',
-                name: 'pagesWidgets',
-                component: PagesWidgets,
-            },
-            {
-                path: 'wizard',
-                name: 'pagesWizard',
-                component: PagesWizard,
-            },
-        ]
-    }
-]
+const pagesRoutes = {
+    path: '/pages',
+    name: 'pages',
+    component: LayoutMain,
+    children: [
+        accountRoutes,
+        feedRoutes,
+        profileRoutes,
+        projectRoutes,
+        teamRoutes,
+        crmRoutes,
+
+        {
+            path: 'invoice',
+            name: 'pagesInvoice',
+            component: PagesInvoice,
+        },
+        {
+            path: 'kanban',
+            name: 'pagesKanban',
+            component: PagesKanban,
+        },
+        {
+            path: 'orders',
+            name: 'pagesOrders',
+            component: PagesOrders,
+        },
+        {
+            path: 'pricing',
+            name: 'pagesPricing',
+            component: PagesPricing,
+        },
+        {
+            path: 'widgets',
+            name: 'pagesWidgets',
+            component: PagesWidgets,
+        },
+        {
+            path: 'wizard',
+            name: 'pagesWizard',
+            component: PagesWizard,
+        },
+    ]
+}
 
 export default pagesRoutes

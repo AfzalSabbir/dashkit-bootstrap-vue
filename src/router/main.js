@@ -58,7 +58,7 @@ const routes = [
     },
     {path: '/:catchAll(.*)', redirect: '/404'},
 
-    ...pagesRoutes
+    pagesRoutes
 ]
 
 const router = createRouter({
