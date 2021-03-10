@@ -170,9 +170,6 @@
                                     </div> <!-- / .row -->
                                 </a>
 
-                                <a href="#">jnjn
-                                </a>
-
                                 <router-link class="list-group-item" :to="'/'">
                                     <div class="row align-items-center">
                                         <div class="col-auto">
@@ -774,34 +771,34 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle " href="#" id="topnavDocumentation" role="button"
+                        <a class="nav-link dropdown-toggle " :class="$root.isActive('/docs')" href="#" id="topnavDocumentation" role="button"
                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Docs
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="topnavDocumentation">
                             <li class="dropright">
-                                <a class="dropdown-item dropdown-toggle " href="#" id="topnavBasics" role="button"
+                                <a class="dropdown-item dropdown-toggle " :class="$root.isActive('/docs/basic')" href="#" id="topnavBasics" role="button"
                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Basics
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="topnavBasics">
-                                    <a class="dropdown-item " href="docs/getting-started.html">
+                                    <router-link class="dropdown-item " :to="{name: 'docsBasicsGettingStarted'}">
                                         Getting Started
-                                    </a>
-                                    <a class="dropdown-item " href="docs/design-file.html">
+                                    </router-link>
+                                    <router-link class="dropdown-item " :to="{name: 'docsBasicsDesignFile'}">
                                         Design File
-                                    </a>
+                                    </router-link>
                                 </div>
                             </li>
                             <li>
-                                <a class="dropdown-item " href="docs/components.html">
+                                <router-link class="dropdown-item " :to="{name: 'docsComponents'}">
                                     Components
-                                </a>
+                                </router-link>
                             </li>
                             <li>
-                                <a class="dropdown-item " href="docs/changelog.html">
+                                <router-link class="dropdown-item " :to="{name: 'docsChangeLogs'}">
                                     Changelog
-                                </a>
+                                </router-link>
                             </li>
                         </ul>
                     </li>

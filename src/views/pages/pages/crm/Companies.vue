@@ -1,5 +1,7 @@
 <template>
-
+    <div id="pagesCrmCompanies">
+        pagesCrmCompanies
+    </div>
 </template>
 
 <script>
