@@ -1,6 +1,6 @@
 <template>
-    <div id="pageProject">
-        <router-view ref="pageProject"></router-view>
+    <div id="pagesProject">
+        <router-view ref="pagesProject"></router-view>
     </div>
 </template>
 
