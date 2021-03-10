@@ -1,21 +1,21 @@
-import PagesAccountIndex from "@/views/pages/pages/account/Index"
-import AccountBilling from "@/views/pages/pages/account/Billing"
-import AccountMembers from "@/views/pages/pages/account/Members"
+import AuthErrorIndex from "@/views/pages/auth/error/Index"
+import ErrorBasic from "@/views/pages/auth/error/Basic"
+import ErrorIllustration from "@/views/pages/auth/error/Illustration"
 
 const errorRoutes = {
     path: 'error',
     name: 'error',
-    component: PagesAccountIndex,
+    component: AuthErrorIndex,
     children: [
         {
             path: 'billing',
-            name: 'pagesAccountBilling',
-            component: AccountBilling,
+            name: 'authErrorBasic',
+            component: ErrorBasic,
         },
         {
             path: 'members',
-            name: 'pagesAccountMembers',
-            component: AccountMembers,
+            name: 'authErrorIllustration',
+            component: ErrorIllustration,
         },
     ]
 }

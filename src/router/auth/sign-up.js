@@ -1,29 +1,29 @@
-import PagesAccountIndex from "@/views/pages/pages/account/Index"
-import AccountGeneral from "@/views/pages/pages/account/General"
-import AccountBilling from "@/views/pages/pages/account/Billing"
-import AccountMembers from "@/views/pages/pages/account/Members"
+import AuthSignUpIndex from "@/views/pages/auth/sign-up/Index"
+import SignUpBasic from "@/views/pages/auth/sign-up/Basic"
+import SignUpCover from "@/views/pages/auth/sign-up/Cover"
+import SignUpIllustration from "@/views/pages/auth/sign-up/Illustration"
 
-const signUpRoutes = {
+const signInRoutes = {
     path: 'sign-up',
     name: 'sign-up',
-    component: PagesAccountIndex,
+    component: AuthSignUpIndex,
     children: [
         {
-            path: 'general',
-            name: 'pagesAccountGeneral',
-            component: AccountGeneral,
+            path: 'basic',
+            name: 'authSignUpBasic',
+            component: SignUpBasic,
         },
         {
-            path: 'billing',
-            name: 'pagesAccountBilling',
-            component: AccountBilling,
+            path: 'cover',
+            name: 'authSignUpCover',
+            component: SignUpCover,
         },
         {
-            path: 'members',
-            name: 'pagesAccountMembers',
-            component: AccountMembers,
+            path: 'illustration',
+            name: 'authSignUpIllustration',
+            component: SignUpIllustration,
         },
     ]
 }
 
-export default signUpRoutes
+export default signInRoutes
