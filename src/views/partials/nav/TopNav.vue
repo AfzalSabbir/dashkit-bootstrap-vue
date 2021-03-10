@@ -169,7 +169,11 @@
                                         </div>
                                     </div> <!-- / .row -->
                                 </a>
-                                <router-link class="list-group-item" :to="{name: 'pagesProfilePosts'}">
+
+                                <a href="#">jnjn
+                                </a>
+
+                                <router-link class="list-group-item" :to="'/'">
                                     <div class="row align-items-center">
                                         <div class="col-auto">
 
@@ -585,7 +589,7 @@
                                     <router-link class="dropdown-item " :to="{name: 'pagesProjectReports'}" exact>
                                         Reports
                                     </router-link>
-                                    <router-link class="dropdown-item " :to="{name: 'pagesProjectNewProject'}" exact>
+                                    <router-link class="dropdown-item " :to="{name: 'pagesProjectNew'}" exact>
                                         New project
                                     </router-link>
                                 </div>
@@ -616,7 +620,7 @@
                                     Feed
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="topnavFeed">
-                                    <router-link class="dropdown-item " :to="{name: 'pagesFeed'}" exact>
+                                    <router-link class="dropdown-item " :to="{name: 'pagesFeedPlatform'}" exact>
                                         Platform
                                     </router-link>
                                     <router-link class="dropdown-item " :to="{name: 'pagesFeedSocial'}" exact>

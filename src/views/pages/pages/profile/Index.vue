@@ -1,6 +1,6 @@
 <template>
-    <div id="pageProfile">
-        <router-view ref="pageProfile"></router-view>
+    <div id="pagesProfile">
+        <router-view ref="pagesProfile"></router-view>
     </div>
 </template>
 
