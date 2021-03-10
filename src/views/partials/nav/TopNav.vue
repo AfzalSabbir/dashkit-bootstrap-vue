@@ -698,74 +698,74 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="topnavAuth" role="button"
+                        <a class="nav-link dropdown-toggle" :class="$root.isActive('/auth')" href="#" id="topnavAuth" role="button"
                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Auth
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="topnavAuth">
                             <li class="dropright">
-                                <a class="dropdown-item dropdown-toggle" href="#" id="topnavSignIn" role="button"
+                                <a class="dropdown-item dropdown-toggle" :class="$root.isActive('/auth/sign-in')" href="#" id="topnavSignIn" role="button"
                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Sign in
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="topnavSignIn">
-                                    <a class="dropdown-item" href="sign-in-cover.html">
-                                        Cover
-                                    </a>
-                                    <a class="dropdown-item" href="sign-in-illustration.html">
-                                        Illustration
-                                    </a>
-                                    <a class="dropdown-item" href="sign-in-basics.html">
+                                    <router-link class="dropdown-item" :to="{name: 'authSignInBasic'}">
                                         Basic
-                                    </a>
+                                    </router-link>
+                                    <router-link class="dropdown-item" :to="{name: 'authSignInCover'}">
+                                        Cover
+                                    </router-link>
+                                    <router-link class="dropdown-item" :to="{name: 'authSignInIllustration'}">
+                                        Illustration
+                                    </router-link>
                                 </div>
                             </li>
                             <li class="dropright">
-                                <a class="dropdown-item dropdown-toggle" href="#" id="topnavSignUp" role="button"
+                                <a class="dropdown-item dropdown-toggle" :class="$root.isActive('/auth/sign-up')" href="#" id="topnavSignUp" role="button"
                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Sign up
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="topnavSignUp">
-                                    <a class="dropdown-item" href="sign-up-cover.html">
-                                        Cover
-                                    </a>
-                                    <a class="dropdown-item" href="sign-up-illustration.html">
-                                        Illustration
-                                    </a>
-                                    <a class="dropdown-item" href="sign-up.html">
+                                    <router-link class="dropdown-item" :to="{name: 'authSignUpBasic'}">
                                         Basic
-                                    </a>
+                                    </router-link>
+                                    <router-link class="dropdown-item" :to="{name: 'authSignUpCover'}">
+                                        Cover
+                                    </router-link>
+                                    <router-link class="dropdown-item" :to="{name: 'authSignUpIllustration'}">
+                                        Illustration
+                                    </router-link>
                                 </div>
                             </li>
                             <li class="dropright">
-                                <a class="dropdown-item dropdown-toggle" href="#" id="topnavPassword" role="button"
+                                <a class="dropdown-item dropdown-toggle" :class="$root.isActive('/auth/password-reset')" href="#" id="topnavPassword" role="button"
                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Password reset
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="topnavPassword">
-                                    <a class="dropdown-item" href="password-reset-cover.html">
-                                        Cover
-                                    </a>
-                                    <a class="dropdown-item" href="password-reset-illustration.html">
-                                        Illustration
-                                    </a>
-                                    <a class="dropdown-item" href="password-reset.html">
+                                    <router-link class="dropdown-item" :to="{name: 'authPasswordResetBasic'}">
                                         Basic
-                                    </a>
+                                    </router-link>
+                                    <router-link class="dropdown-item" :to="{name: 'authPasswordResetCover'}">
+                                        Cover
+                                    </router-link>
+                                    <router-link class="dropdown-item" :to="{name: 'authPasswordResetIllustration'}">
+                                        Illustration
+                                    </router-link>
                                 </div>
                             </li>
                             <li class="dropright">
-                                <a class="dropdown-item dropdown-toggle" href="#" id="topnavError" role="button"
+                                <a class="dropdown-item dropdown-toggle" :class="$root.isActive('/auth/error')" href="#" id="topnavError" role="button"
                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Error
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="topnavError">
-                                    <a class="dropdown-item" href="error-illustration.html">
-                                        Illustration
-                                    </a>
-                                    <a class="dropdown-item" href="error.html">
+                                    <router-link class="dropdown-item" :to="{name: 'authErrorBasic'}">
                                         Basic
-                                    </a>
+                                    </router-link>
+                                    <router-link class="dropdown-item" :to="{name: 'authErrorIllustration'}">
+                                        Illustration
+                                    </router-link>
                                 </div>
                             </li>
                         </ul>

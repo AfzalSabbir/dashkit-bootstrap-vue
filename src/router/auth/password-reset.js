@@ -1,29 +1,29 @@
-import PagesAccountIndex from "@/views/pages/pages/account/Index"
-import AccountGeneral from "@/views/pages/pages/account/General"
-import AccountBilling from "@/views/pages/pages/account/Billing"
-import AccountMembers from "@/views/pages/pages/account/Members"
+import AuthPasswordResetIndex from "@/views/pages/auth/password-reset/Index"
+import PasswordResetBasic from "@/views/pages/auth/password-reset/Basic"
+import PasswordResetCover from "@/views/pages/auth/password-reset/Cover"
+import PasswordResetIllustration from "@/views/pages/auth/password-reset/Illustration"
 
-const passwordResetRoutes = {
+const signInRoutes = {
     path: 'password-reset',
     name: 'password-reset',
-    component: PagesAccountIndex,
+    component: AuthPasswordResetIndex,
     children: [
         {
-            path: 'general',
-            name: 'pagesAccountGeneral',
-            component: AccountGeneral,
+            path: 'basic',
+            name: 'authPasswordResetBasic',
+            component: PasswordResetBasic,
         },
         {
-            path: 'billing',
-            name: 'pagesAccountBilling',
-            component: AccountBilling,
+            path: 'cover',
+            name: 'authPasswordResetCover',
+            component: PasswordResetCover,
         },
         {
-            path: 'members',
-            name: 'pagesAccountMembers',
-            component: AccountMembers,
+            path: 'illustration',
+            name: 'authPasswordResetIllustration',
+            component: PasswordResetIllustration,
         },
     ]
 }
 
-export default passwordResetRoutes
+export default signInRoutes
