@@ -8,6 +8,8 @@ import DashboardECommerce from "@/views/pages/DashboardECommerce"
 import DashboardProjectManagement from "@/views/pages/DashboardProjectManagement"
 
 import pagesRoutes from "./pages/index"
+import authRoutes from "@/router/auth";
+import docsRoutes from "@/router/docs";
 
 import e404 from "@/views/pages/error/e404"
 
@@ -58,7 +60,9 @@ const routes = [
     },
     {path: '/:catchAll(.*)', redirect: '/404'},
 
-    pagesRoutes
+    pagesRoutes,
+    authRoutes,
+    docsRoutes,
 ]
 
 const router = createRouter({
