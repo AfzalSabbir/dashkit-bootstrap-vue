@@ -1,12 +1,12 @@
 <template>
-    <div id="pagesCrmDeals">
-        pagesCrmDeals
+    <div id="designFile">
+        designFile
     </div>
 </template>
 
 <script>
 export default {
-    name: "Deals"
+    name: "DesignFile"
 }
 </script>
 

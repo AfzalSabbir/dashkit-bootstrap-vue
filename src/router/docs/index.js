@@ -2,8 +2,8 @@ import LayoutMain from "@/views/layouts/Main"
 
 import basicsRoutes from "./basics";
 
-import PagesInvoice from "@/views/pages/pages/Invoice"
-import PagesKanban from "@/views/pages/pages/Kanban"
+import ChangeLogs from "@/views/pages/docs/ChangeLogs"
+import Components from "@/views/pages/docs/Components"
 
 
 const docsRoutes = {
@@ -14,14 +14,14 @@ const docsRoutes = {
         basicsRoutes,
 
         {
-            path: 'invoice',
-            name: 'pagesInvoice',
-            component: PagesInvoice,
+            path: 'components',
+            name: 'docsComponents',
+            component: Components,
         },
         {
-            path: 'kanban',
-            name: 'pagesKanban',
-            component: PagesKanban,
+            path: 'change-logs',
+            name: 'docsChangeLogs',
+            component: ChangeLogs,
         },
     ]
 }

@@ -1,21 +1,21 @@
-import PagesAccountIndex from "@/views/pages/pages/account/Index"
-import AccountBilling from "@/views/pages/pages/account/Billing"
-import AccountMembers from "@/views/pages/pages/account/Members"
+import DocsBasicsIndex from "@/views/pages/docs/basics/Index"
+import DesignFile from "@/views/pages/docs/basics/DesignFile"
+import GettingStarted from "@/views/pages/docs/basics/GettingStarted"
 
 const basicsRoutes = {
     path: 'basics',
     name: 'basics',
-    component: PagesAccountIndex,
+    component: DocsBasicsIndex,
     children: [
         {
-            path: 'billing',
-            name: 'pagesAccountBilling',
-            component: AccountBilling,
+            path: 'members',
+            name: 'docsBasicsGettingStarted',
+            component: GettingStarted,
         },
         {
-            path: 'members',
-            name: 'pagesAccountMembers',
-            component: AccountMembers,
+            path: 'design-file',
+            name: 'docsBasicsDesignFile',
+            component: DesignFile,
         },
     ]
 }
