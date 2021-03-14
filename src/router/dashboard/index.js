@@ -1,28 +1,28 @@
-import LayoutMain from "@/views/layouts/Main";
+let LayoutMain = () => import("@/views/layouts/Main");
 
-import DashboardIndex from "@/views/pages/Index";
-import DashboardProjectManagement from "@/views/pages/DashboardProjectManagement";
-import DashboardECommerce from "@/views/pages/DashboardECommerce";
+let DashboardIndex             = () => import("@/views/pages/Index");
+let DashboardProjectManagement = () => import("@/views/pages/DashboardProjectManagement");
+let DashboardECommerce         = () => import("@/views/pages/DashboardECommerce");
 
 
 const dashboardRoutes = {
-    path: '/dashboard',
-    name: 'mainLayout',
+    path     : '/dashboard',
+    name     : 'mainLayout',
     component: LayoutMain,
-    children: [
+    children : [
         {
-            path: '',
-            name: 'dashboard',
+            path     : '',
+            name     : 'dashboard',
             component: DashboardIndex,
         },
         {
-            path: 'project-management',
-            name: 'dashboardProjectManagement',
+            path     : 'project-management',
+            name     : 'dashboardProjectManagement',
             component: DashboardProjectManagement,
         },
         {
-            path: 'ecommerce',
-            name: 'dashboardECommerce',
+            path     : 'ecommerce',
+            name     : 'dashboardECommerce',
             component: DashboardECommerce,
         },
     ]

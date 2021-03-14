@@ -1,33 +1,33 @@
-import PagesProjectIndex from "@/views/pages/pages/project/Index"
-import ProjectReports from "@/views/pages/pages/project/Reports"
-import ProjectOverview from "@/views/pages/pages/project/Overview"
-import ProjectNew from "@/views/pages/pages/project/NewProject"
-import ProjectFiles from "@/views/pages/pages/project/Files"
+let PagesProjectIndex = () => import("@/views/pages/pages/project/Index");
+let ProjectReports    = () => import("@/views/pages/pages/project/Reports");
+let ProjectOverview   = () => import("@/views/pages/pages/project/Overview");
+let ProjectNew        = () => import("@/views/pages/pages/project/NewProject");
+let ProjectFiles      = () => import("@/views/pages/pages/project/Files");
 
 
 const projectRoutes = {
-    path: 'project',
-    name: 'project',
+    path     : 'project',
+    name     : 'project',
     component: PagesProjectIndex,
-    children: [
+    children : [
         {
-            path: 'overview',
-            name: 'pagesProjectOverview',
+            path     : 'overview',
+            name     : 'pagesProjectOverview',
             component: ProjectOverview,
         },
         {
-            path: 'files',
-            name: 'pagesProjectFiles',
+            path     : 'files',
+            name     : 'pagesProjectFiles',
             component: ProjectFiles,
         },
         {
-            path: 'reports',
-            name: 'pagesProjectReports',
+            path     : 'reports',
+            name     : 'pagesProjectReports',
             component: ProjectReports,
         },
         {
-            path: 'new',
-            name: 'pagesProjectNew',
+            path     : 'new',
+            name     : 'pagesProjectNew',
             component: ProjectNew,
         },
     ]

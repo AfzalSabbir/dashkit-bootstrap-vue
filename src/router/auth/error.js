@@ -1,6 +1,6 @@
-import AuthErrorIndex from "@/views/pages/auth/error/Index"
-import ErrorBasic from "@/views/pages/auth/error/Basic"
-import ErrorIllustration from "@/views/pages/auth/error/Illustration"
+let AuthErrorIndex = () => import("@/views/pages/auth/error/Index")
+let ErrorBasic = () => import("@/views/pages/auth/error/Basic")
+let ErrorIllustration = () => import("@/views/pages/auth/error/Illustration")
 
 const errorRoutes = {
     path: 'error',

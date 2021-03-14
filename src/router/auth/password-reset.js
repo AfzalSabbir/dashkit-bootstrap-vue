@@ -1,7 +1,7 @@
-import AuthPasswordResetIndex from "@/views/pages/auth/password-reset/Index"
-import PasswordResetBasic from "@/views/pages/auth/password-reset/Basic"
-import PasswordResetCover from "@/views/pages/auth/password-reset/Cover"
-import PasswordResetIllustration from "@/views/pages/auth/password-reset/Illustration"
+let AuthPasswordResetIndex = () => import("@/views/pages/auth/password-reset/Index");
+let PasswordResetBasic = () => import("@/views/pages/auth/password-reset/Basic");
+let PasswordResetCover = () => import("@/views/pages/auth/password-reset/Cover");
+let PasswordResetIllustration = () => import("@/views/pages/auth/password-reset/Illustration");
 
 const signInRoutes = {
     path: 'password-reset',

@@ -1,27 +1,27 @@
-import LayoutMain from "@/views/layouts/Main";
+let LayoutMain = () => import("@/views/layouts/Main");
 
-import e404 from "@/views/pages/error/e404";
+let e404 = () => import("@/views/pages/error/e404");
 
 
 const otherRoutes = [
     {
-        path: '/',
-        name: 'home',
+        path     : '/',
+        name     : 'home',
         component: LayoutMain,
-        children: [
+        children : [
             {
-                path: '/',
+                path    : '/',
                 redirect: '/dashboard'
             }
         ]
     },
     {
-        path: '/404',
+        path     : '/404',
         component: LayoutMain,
-        children: [
+        children : [
             {
-                path: '/',
-                name: '404',
+                path     : '/',
+                name     : '404',
                 component: e404,
             }
         ]

@@ -1,7 +1,7 @@
-import AuthSignInIndex from "@/views/pages/auth/sign-in/Index"
-import SignInBasic from "@/views/pages/auth/sign-in/Basic"
-import SignInCover from "@/views/pages/auth/sign-in/Cover"
-import SignInIllustration from "@/views/pages/auth/sign-in/Illustration"
+let AuthSignInIndex = () => import("@/views/pages/auth/sign-in/Index");
+let SignInBasic = () => import("@/views/pages/auth/sign-in/Basic");
+let SignInCover = () => import("@/views/pages/auth/sign-in/Cover");
+let SignInIllustration = () => import("@/views/pages/auth/sign-in/Illustration");
 
 const signInRoutes = {
     path: 'sign-in',

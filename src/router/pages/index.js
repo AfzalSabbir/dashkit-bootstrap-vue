@@ -1,25 +1,25 @@
 import LayoutMain from "@/views/layouts/Main"
 
 import accountRoutes from "./account"
-import feedRoutes from "./feed"
+import feedRoutes    from "./feed"
 import profileRoutes from "./profile"
 import projectRoutes from "./project"
-import teamRoutes from "./team"
-import crmRoutes from "./crm"
+import teamRoutes    from "./team"
+import crmRoutes     from "./crm"
 
-import PagesInvoice from "@/views/pages/pages/Invoice"
-import PagesKanban from "@/views/pages/pages/Kanban"
-import PagesOrders from "@/views/pages/pages/Orders"
-import PagesPricing from "@/views/pages/pages/Pricing"
-import PagesWidgets from "@/views/pages/pages/Widgets"
-import PagesWizard from "@/views/pages/pages/Wizard"
+let PagesInvoice = () => import("@/views/pages/pages/Invoice");
+let PagesKanban  = () => import("@/views/pages/pages/Kanban");
+let PagesOrders  = () => import("@/views/pages/pages/Orders");
+let PagesPricing = () => import("@/views/pages/pages/Pricing");
+let PagesWidgets = () => import("@/views/pages/pages/Widgets");
+let PagesWizard  = () => import("@/views/pages/pages/Wizard");
 
 
 const pagesRoutes = {
-    path: '/pages',
-    name: 'pages',
+    path     : '/pages',
+    name     : 'pages',
     component: LayoutMain,
-    children: [
+    children : [
         accountRoutes,
         feedRoutes,
         profileRoutes,
@@ -28,33 +28,33 @@ const pagesRoutes = {
         crmRoutes,
 
         {
-            path: 'invoice',
-            name: 'pagesInvoice',
+            path     : 'invoice',
+            name     : 'pagesInvoice',
             component: PagesInvoice,
         },
         {
-            path: 'kanban',
-            name: 'pagesKanban',
+            path     : 'kanban',
+            name     : 'pagesKanban',
             component: PagesKanban,
         },
         {
-            path: 'orders',
-            name: 'pagesOrders',
+            path     : 'orders',
+            name     : 'pagesOrders',
             component: PagesOrders,
         },
         {
-            path: 'pricing',
-            name: 'pagesPricing',
+            path     : 'pricing',
+            name     : 'pagesPricing',
             component: PagesPricing,
         },
         {
-            path: 'widgets',
-            name: 'pagesWidgets',
+            path     : 'widgets',
+            name     : 'pagesWidgets',
             component: PagesWidgets,
         },
         {
-            path: 'wizard',
-            name: 'pagesWizard',
+            path     : 'wizard',
+            name     : 'pagesWizard',
             component: PagesWizard,
         },
     ]
