@@ -1,27 +1,27 @@
-import PagesCRMIndex from "@/views/pages/pages/crm/Index"
-import CRMContacts from "@/views/pages/pages/crm/Contacts"
-import CRMCompanies from "@/views/pages/pages/crm/Companies"
-import CRMDeals from "@/views/pages/pages/crm/Deals"
+let PagesCRMIndex = () => import("@/views/pages/pages/crm/Index");
+let CRMContacts   = () => import("@/views/pages/pages/crm/Contacts");
+let CRMCompanies  = () => import("@/views/pages/pages/crm/Companies");
+let CRMDeals      = () => import("@/views/pages/pages/crm/Deals");
 
 const crmRoutes = {
-    path: 'crm',
-    name: 'crm',
+    path     : 'crm',
+    name     : 'crm',
     component: PagesCRMIndex,
-    children: [
+    children : [
 
         {
-            path: 'contacts',
-            name: 'pagesCRMContacts',
+            path     : 'contacts',
+            name     : 'pagesCRMContacts',
             component: CRMContacts,
         },
         {
-            path: 'companies',
-            name: 'pagesCRMCompanies',
+            path     : 'companies',
+            name     : 'pagesCRMCompanies',
             component: CRMCompanies,
         },
         {
-            path: 'deals',
-            name: 'pagesCRMDeals',
+            path     : 'deals',
+            name     : 'pagesCRMDeals',
             component: CRMDeals,
         },
     ]

@@ -1,20 +1,20 @@
-import DocsBasicsIndex from "@/views/pages/docs/basics/Index"
-import DesignFile from "@/views/pages/docs/basics/DesignFile"
-import GettingStarted from "@/views/pages/docs/basics/GettingStarted"
+let DocsBasicsIndex = () => import("@/views/pages/docs/basics/Index");
+let DesignFile      = () => import("@/views/pages/docs/basics/DesignFile");
+let GettingStarted  = () => import("@/views/pages/docs/basics/GettingStarted");
 
 const basicsRoutes = {
-    path: 'basics',
-    name: 'basics',
+    path     : 'basics',
+    name     : 'basics',
     component: DocsBasicsIndex,
-    children: [
+    children : [
         {
-            path: 'members',
-            name: 'docsBasicsGettingStarted',
+            path     : 'members',
+            name     : 'docsBasicsGettingStarted',
             component: GettingStarted,
         },
         {
-            path: 'design-file',
-            name: 'docsBasicsDesignFile',
+            path     : 'design-file',
+            name     : 'docsBasicsDesignFile',
             component: DesignFile,
         },
     ]

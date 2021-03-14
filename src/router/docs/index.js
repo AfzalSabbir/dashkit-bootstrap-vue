@@ -7,20 +7,20 @@ import Components from "@/views/pages/docs/Components"
 
 
 const docsRoutes = {
-    path: '/docs',
-    name: 'docs',
+    path     : '/docs',
+    name     : 'docs',
     component: LayoutMain,
-    children: [
+    children : [
         basicsRoutes,
 
         {
-            path: 'components',
-            name: 'docsComponents',
+            path     : 'components',
+            name     : 'docsComponents',
             component: Components,
         },
         {
-            path: 'change-logs',
-            name: 'docsChangeLogs',
+            path     : 'change-logs',
+            name     : 'docsChangeLogs',
             component: ChangeLogs,
         },
     ]
