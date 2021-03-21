@@ -1,7 +1,10 @@
-import { createApp } from 'vue'
-import router from './router/main'
+import {createApp} from 'vue'
+import router      from './router/main'
+
 window.$ = window.jquery = window.jQuery = require('jquery');
 window._ = window.lodash = require('lodash');
+
+import "bootstrap";
 
 /*import ("../public/assets/libs/jquery/dist/jquery.min.js");
 import ("../public/assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js");
@@ -17,7 +20,7 @@ import ("../public/assets/libs/quill/dist/quill.min.js");
 import ("../public/assets/libs/select2/dist/js/select2.full.min.js");
 import ("../public/assets/libs/chart.js/Chart.extension.js");*/
 
-import App from './App.vue'
+import App   from './App.vue'
 import store from './store'
 
 const Vue = createApp(App).use(store).use(router).mount('#app')

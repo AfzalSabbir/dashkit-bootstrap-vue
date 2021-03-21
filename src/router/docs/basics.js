@@ -8,7 +8,7 @@ const basicsRoutes = {
     component: DocsBasicsIndex,
     children : [
         {
-            path     : 'members',
+            path     : 'getting-started',
             name     : 'docsBasicsGettingStarted',
             component: GettingStarted,
         },
