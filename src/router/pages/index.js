@@ -2,9 +2,8 @@ import LayoutMain from "@/views/layouts/Main"
 
 import accountRoutes from "@/router/pages/account";
 import feedRoutes    from "@/router/pages/feed";
-//import profileRoutes from "@/router/pages/profile";
 import profileRoutes from "@/views/pages/pages/profile/routes";
-import projectRoutes from "@/router/pages/project";
+import projectRoutes from "@/views/pages/pages/project/routes";
 import teamRoutes    from "@/router/pages/team";
 import crmRoutes     from "@/router/pages/crm";
 
