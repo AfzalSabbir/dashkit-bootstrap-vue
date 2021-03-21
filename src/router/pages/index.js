@@ -1,11 +1,12 @@
 import LayoutMain from "@/views/layouts/Main"
 
-import accountRoutes from "./account"
-import feedRoutes    from "./feed"
-import profileRoutes from "./profile"
-import projectRoutes from "./project"
-import teamRoutes    from "./team"
-import crmRoutes     from "./crm"
+import accountRoutes from "@/router/pages/account";
+import feedRoutes    from "@/router/pages/feed";
+//import profileRoutes from "@/router/pages/profile";
+import profileRoutes from "@/views/pages/pages/profile/routes";
+import projectRoutes from "@/router/pages/project";
+import teamRoutes    from "@/router/pages/team";
+import crmRoutes     from "@/router/pages/crm";
 
 let PagesInvoice = () => import("@/views/pages/pages/Invoice");
 let PagesKanban  = () => import("@/views/pages/pages/Kanban");
