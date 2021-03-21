@@ -1,20 +1,20 @@
-let AuthErrorIndex = () => import("@/views/pages/auth/error/Index")
-let ErrorBasic = () => import("@/views/pages/auth/error/Basic")
+let AuthErrorIndex    = () => import("@/views/pages/auth/error/Index")
+let ErrorBasic        = () => import("@/views/pages/auth/error/Basic")
 let ErrorIllustration = () => import("@/views/pages/auth/error/Illustration")
 
 const errorRoutes = {
-    path: 'error',
-    name: 'error',
+    path     : 'error',
+    name     : 'error',
     component: AuthErrorIndex,
-    children: [
+    children : [
         {
-            path: 'billing',
-            name: 'authErrorBasic',
+            path     : 'billing',
+            name     : 'authErrorBasic',
             component: ErrorBasic,
         },
         {
-            path: 'members',
-            name: 'authErrorIllustration',
+            path     : 'members',
+            name     : 'authErrorIllustration',
             component: ErrorIllustration,
         },
     ]
