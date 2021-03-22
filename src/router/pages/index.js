@@ -4,7 +4,7 @@ import accountRoutes from "@/router/pages/account";
 import feedRoutes    from "@/router/pages/feed";
 import profileRoutes from "@/views/pages/pages/profile/routes";
 import projectRoutes from "@/views/pages/pages/project/routes";
-import teamRoutes    from "@/router/pages/team";
+import teamRoutes    from "@/views/pages/pages/team/router";
 import crmRoutes     from "@/router/pages/crm";
 
 let PagesInvoice = () => import("@/views/pages/pages/Invoice");
